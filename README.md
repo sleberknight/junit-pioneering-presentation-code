@@ -3,4 +3,4 @@
 This repository contains sample code for a presentation on [JUnit Pioneer](https://junit-pioneer.org) given at Fortitude
 Technologies on March 4, 2021.
 
-You can view the presentation slides on Slideshare [TODO](https://www.slideshare.net/scottleber/TODO)
+You can view the presentation slides on Slideshare [here](https://www.slideshare.net/scottleber/junit-pioneer/)
