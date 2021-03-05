@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.kiwiproject</groupId>
+        <artifactId>kiwi-parent</artifactId>
+        <version>0.9.0</version>
+    </parent>
+
+    <groupId>com.fortitudetec</groupId>
+    <artifactId>junit-pioneering-presentation-code</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>JUnit Pioneering Presentation Example Code</name>
+
+    <properties>
+        <junit-pioneer.version>1.3.8</junit-pioneer.version>
+        <kiwi-test.version>0.15.0</kiwi-test.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.kiwiproject</groupId>
+            <artifactId>kiwi</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+
+        <!-- test dependencies -->
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.7.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit-pioneer</groupId>
+            <artifactId>junit-pioneer</artifactId>
+            <version>${junit-pioneer.version}</version>
+            <scope>test</scope>
+            <!-- Because Pioneer is behind Jupiter's current version -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-params</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-commons</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-launcher</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kiwiproject</groupId>
+            <artifactId>kiwi-test</artifactId>
+            <version>0.15.0</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
