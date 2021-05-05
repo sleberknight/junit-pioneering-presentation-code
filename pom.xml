@@ -17,7 +17,7 @@
     <name>JUnit Pioneering Presentation Example Code</name>
 
     <properties>
-        <junit-pioneer.version>1.4.0</junit-pioneer.version>
+        <junit-pioneer.version>1.4.1</junit-pioneer.version>
         <kiwi-test.version>0.15.0</kiwi-test.version>
     </properties>
 
