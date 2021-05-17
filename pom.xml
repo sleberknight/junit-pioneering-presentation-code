@@ -13,11 +13,14 @@
 
     <groupId>com.fortitudetec</groupId>
     <artifactId>junit-pioneering-presentation-code</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>JUnit Pioneering Presentation Example Code</name>
 
     <properties>
+        <!-- Temporary pin Jupiter version until kiwi-parent 0.12.0 is released; then can remove -->
+        <junit.jupiter.version>5.7.2</junit.jupiter.version>
         <junit-pioneer.version>1.4.1</junit-pioneer.version>
+        <junit-platform-launcher.version>1.7.2</junit-platform-launcher.version>
         <kiwi-test.version>0.15.0</kiwi-test.version>
     </properties>
 
@@ -34,7 +37,7 @@
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
-            <version>1.7.1</version>
+            <version>${junit-platform-launcher.version}</version>
             <scope>test</scope>
         </dependency>
 
