@@ -17,9 +17,6 @@
     <name>JUnit Pioneering Presentation Example Code</name>
 
     <properties>
-        <!-- Temporary pin Jupiter version until kiwi-parent 0.12.0 is released; then can remove -->
-        <junit.jupiter.version>5.7.2</junit.jupiter.version>
-        <junit-pioneer.version>1.4.2</junit-pioneer.version>
         <junit-platform-launcher.version>1.7.2</junit-platform-launcher.version>
         <kiwi-test.version>0.20.0</kiwi-test.version>
     </properties>
