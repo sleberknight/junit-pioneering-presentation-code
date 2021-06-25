@@ -21,7 +21,7 @@
         <junit.jupiter.version>5.7.2</junit.jupiter.version>
         <junit-pioneer.version>1.4.2</junit-pioneer.version>
         <junit-platform-launcher.version>1.7.2</junit-platform-launcher.version>
-        <kiwi-test.version>0.15.0</kiwi-test.version>
+        <kiwi-test.version>0.20.0</kiwi-test.version>
     </properties>
 
     <dependencies>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.kiwiproject</groupId>
             <artifactId>kiwi</artifactId>
-            <version>0.23.0</version>
+            <version>0.24.0</version>
         </dependency>
 
         <!-- test dependencies -->
@@ -70,7 +70,7 @@
         <dependency>
             <groupId>org.kiwiproject</groupId>
             <artifactId>kiwi-test</artifactId>
-            <version>0.19.0</version>
+            <version>${kiwi-test.version}</version>
             <scope>test</scope>
         </dependency>
 
