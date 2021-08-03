@@ -18,7 +18,7 @@
 
     <properties>
         <junit-platform-launcher.version>1.7.2</junit-platform-launcher.version>
-        <kiwi-test.version>0.20.0</kiwi-test.version>
+        <kiwi-test.version>0.21.0</kiwi-test.version>
     </properties>
 
     <dependencies>
