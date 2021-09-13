@@ -17,7 +17,7 @@
     <name>JUnit Pioneering Presentation Example Code</name>
 
     <properties>
-        <junit-platform-launcher.version>1.7.2</junit-platform-launcher.version>
+        <junit-platform-launcher.version>1.8.0</junit-platform-launcher.version>
         <kiwi-test.version>1.0.0</kiwi-test.version>
     </properties>
 
