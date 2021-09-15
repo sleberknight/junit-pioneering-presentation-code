@@ -17,7 +17,9 @@
     <name>JUnit Pioneering Presentation Example Code</name>
 
     <properties>
-        <junit-platform-launcher.version>1.7.2</junit-platform-launcher.version>
+        <!-- TODO Temporarily override the JUnit version in kiwi-parent; remove once kiwi-parent is released with JUnit 5.8.0 -->
+        <junit.jupiter.version>5.8.0</junit.jupiter.version>
+        <junit-platform-launcher.version>1.8.0</junit-platform-launcher.version>
         <kiwi-test.version>1.0.0</kiwi-test.version>
     </properties>
 
