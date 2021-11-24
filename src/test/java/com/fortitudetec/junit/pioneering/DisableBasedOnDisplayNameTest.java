@@ -40,13 +40,6 @@ class DisableBasedOnDisplayNameTest {
         failIfContainsAny(value, "123-45-6789", "234-56-7890");
     }
 
-    @DisableIfDisplayName(contains = {"42", "84"}, matches = ".*\\d{3}-\\d{2}-\\d{4}.*")
-    @ParameterizedTest(name = "Test scenario {0}")
-    @ValueSource(strings = {"24", "42", "123-45-6789", "400", "234-56-7890", "888"})
-    void shouldDisableUsingContainsAndMatches(String value) {
-        failIfContainsAny(value, "42", "84", "123-45-6789", "234-56-7890");
-    }
-
     @DisableIfDisplayName(matches = ".*2$")
     @ParameterizedTest(name = "Disable if ends with two in number {0}")
     @IntRangeSource(from = 0, to = 100)
