@@ -6,12 +6,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledForJreRange;
+import org.junit.jupiter.api.condition.JRE;
 import org.junitpioneer.jupiter.ClearEnvironmentVariable;
 import org.junitpioneer.jupiter.SetEnvironmentVariable;
 
 @DisplayName("Environment Variable Annotations")
 @SetEnvironmentVariable(key = "CLASS_VAR_1", value = "value1")
 @SetEnvironmentVariable(key = "CLASS_VAR_2", value = "value2")
+@DisabledForJreRange(min = JRE.JAVA_17, disabledReason = "illegal reflective access on JDK 17 and higher")
 class EnvironmentVariablesTest {
 
     @BeforeAll
