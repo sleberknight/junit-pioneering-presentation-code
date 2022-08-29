@@ -2,19 +2,33 @@ package com.fortitudetec.junit.pioneering;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
 import org.junitpioneer.jupiter.DefaultLocale;
 import org.junitpioneer.jupiter.DefaultTimeZone;
 
 import java.util.Locale;
 import java.util.TimeZone;
 
+import lombok.extern.slf4j.Slf4j;
+
 @DisplayName("@DefaultLocale and @DefaultTimeZone")
 @DefaultLocale("es")
 @DefaultTimeZone("America/Mexico_City")
+@Slf4j
 class DefaultLocaleAndTimeZoneTest {
+
+    @BeforeEach
+    void setUp(TestInfo testInfo) {
+        LOG.info("{}:", testInfo.getDisplayName());
+        LOG.info("\tDefault Locale: {} ; default TimeZone: {} ({})",
+                Locale.getDefault(),
+                TimeZone.getDefault().getID(),
+                TimeZone.getDefault().getDisplayName());
+    }
 
     @Test
     void shouldSetDefaultLocaleFromClassLevel() {
