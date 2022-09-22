@@ -19,7 +19,7 @@
     <properties>
         <junit-platform-launcher.version>1.9.1</junit-platform-launcher.version>
         <kiwi.version>2.3.0</kiwi.version>
-        <kiwi-test.version>2.2.1</kiwi-test.version>
+        <kiwi-test.version>2.3.0</kiwi-test.version>
         <logback-classic.version>1.4.1</logback-classic.version>
         <slf4j-api.version>2.0.2</slf4j-api.version>
     </properties>
