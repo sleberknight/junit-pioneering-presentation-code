@@ -15,8 +15,8 @@ import org.junitpioneer.jupiter.params.LongRangeSource;
 import java.util.List;
 import java.util.stream.Stream;
 
-@DisplayName("@CartesianProductTest")
-public class CartesianProductTestAnnotationTest {
+@DisplayName("@CartesianTest")
+public class CartesianTestAnnotationTest {
 
     // 4 inputs (2 to 2nd power)
     @CartesianTest
