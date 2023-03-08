@@ -32,7 +32,7 @@ class DefaultLocaleAndTimeZoneTest {
 
     @Test
     void shouldSetDefaultLocaleFromClassLevel() {
-        assertThat(Locale.getDefault()).isEqualTo(new Locale("es"));
+        assertThat(Locale.getDefault()).isEqualTo(new Locale.Builder().setLanguage("es").build());
     }
 
     @Nested
@@ -56,15 +56,16 @@ class DefaultLocaleAndTimeZoneTest {
         @Test
         @DefaultLocale(language = "es", country = "MX")
         void usingLanguageAndCountry() {
-            assertThat(Locale.getDefault()).isEqualTo(new Locale("es", "MX"));
+            assertThat(Locale.getDefault()).isEqualTo(
+                    new Locale.Builder().setLanguage("es").setRegion("MX").build());
         }
 
-        // nan-Hant-TW (Min Nan Chinese as spoken in Taiwan using traditional Han characters)
-        // (source: https://en.wikipedia.org/wiki/IETF_language_tag)
+        // see: https://en.wikipedia.org/wiki/IETF_language_tag
         @Test
-        @DefaultLocale(language = "nan", country = "TW", variant = "Hant")
+        @DefaultLocale(language = "ja", country = "JP", variant = "japanese")
         void usingLanguageAndCountryAndVariant() {
-            assertThat(Locale.getDefault()).isEqualTo(new Locale("nan", "TW", "Hant"));
+            assertThat(Locale.getDefault()).isEqualTo(
+                new Locale.Builder().setLanguage("ja").setRegion("JP").setVariant("japanese").build());
         }
     }
 
