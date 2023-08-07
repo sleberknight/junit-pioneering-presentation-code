@@ -17,7 +17,7 @@
     <name>JUnit Pioneering Presentation Example Code</name>
 
     <properties>
-        <kiwi.version>2.6.0</kiwi.version>
+        <kiwi.version>3.0.0</kiwi.version>
         <kiwi-test.version>2.3.3</kiwi-test.version>
         <logback-classic.version>1.4.8</logback-classic.version>
         <slf4j-api.version>2.0.7</slf4j-api.version>
